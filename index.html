@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurudas Rental Service Goa</title>
+    <!-- Use Tailwind CSS for a clean and responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body id="page-body" class="antialiased bg-main dark-mode">
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919999999999" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform transform hover:scale-110">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 navbar-backdrop bg-gray-900 bg-opacity-80 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Brand Name -->
+            <a href="#" class="flex items-center space-x-2">
+              
+                <span id="logo-text" class="text-xl font-bold text-white">Gurudas Rentals Goa</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-6 lg:space-x-8">
+                <a href="#bikes" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Bikes</a>
+                <a href="#cars" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Cars</a>
+                <a href="#why-choose-us" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Why Us</a>
+                <a href="#testimonials" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Contact</a>
+            </div>
+
+            <!-- Mobile Menu and Theme Switch -->
+            <div class="flex items-center space-x-4">
+                <div id="theme-toggle" class="w-16 h-8 flex items-center bg-gray-600 rounded-full p-1 cursor-pointer transition-colors duration-300">
+                    <div id="theme-handle" class="w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300"></div>
+                </div>
+                <button class="md:hidden text-gray-300 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <div class="pt-16 py-8 px-4 bg-main">
+<!-- Header/Banner Section -->
+<div class="relative w-full overflow-hidden shadow-lg mb-8" style="padding-top: 56.25%;">
+    <!-- Slider Images (all in one container) -->
+    <img src="images/Banner_Img_1.jpeg" class="slider-image active" alt="Goa beach road">
+    <img src="images/Banner_img_2.jpg" class="slider-image" alt="Goa scooter rental">
+    <img src="images/banner_img_9.jpg" class="slider-image" alt="Goa scenic drive">
+    <img src="images/banner_img_4.jpg" class="slider-image" alt="Goa beach road">
+    <img src="images/banner_img_5.jpg" class="slider-image" alt="Goa scooter rental">
+    <img src="images/banner_img_6.jpg" class="slider-image" alt="Goa scenic drive">
+    <img src="images/banner_img_14.jpg" class="slider-image" alt="Goa beach road">
+    <img src="images/banner_img_1.jpg" class="slider-image" alt="Goa scooter rental">
+    <img src="images/banner_img_9.jpg" class="slider-image" alt="Goa scenic drive">
+    <img src="images/banner_Img_10.jpeg" class="slider-image" alt="Goa beach road">
+    <img src="images/banner_img_11.jpg" class="slider-image" alt="Goa scooter rental">
+    <img src="images/banner_img_12.jpg" class="slider-image" alt="Goa scenic drive">
+    <img src="images/banner_Img_13.jpeg" class="slider-image" alt="Goa beach road">
+    <img src="images/banner_img_14.jpg" class="slider-image" alt="Goa scooter rental">
+    <img src="images/banner_img_5.jpg" class="slider-image" alt="Goa scenic drive">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+
+    <!-- Text Overlay -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+        <h1 id="banner-title" class="text-4xl md:text-6xl text-center text-white font-bold leading-tight drop-shadow-lg mb-2">
+            Welcome to Gurudas Rental Service Goa
+        </h1>
+        <h2 id="banner-subtitle" class="text-lg md:text-xl text-center text-white font-medium drop-shadow-lg mb-6">
+            Your Trusted Partner for rental services in Goa
+        </h2>
+        <a href="#bikes" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300">
+            Explore
+        </a>
+    </div>
+</div>
+        <!-- Bikes Section -->
+        <div id="bikes" class="bg-card shadow-lg p-4 mb-8">
+            <h2 id="bikes-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Bikes for Every Adventure</h2>
+            <p id="bikes-subtitle" class="text-center text-card-dark mb-8">We have a wide variety of scooters to get you exploring Goa effortlessly.</p>
+
+            <div class="relative">
+                <div id="bike-slider" class="flex overflow-x-hidden space-x-4 pb-4 card-slider-container">
+                    <!-- Bike Cards -->
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/activa_blue.webp" alt="Honda Activa" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Honda Activa</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/suzuki_access.avif" alt="Suzuki Access" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Suzuki Access 125</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/White_vespa.webp" alt="Honda Dio" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Vespa</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/facino_blue_side.webp" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Yamaha Fascino</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/aviotor_white_side.webp" alt="Aviotor" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Aviotor</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/facino_black_front.png" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Yamaha Fascino</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/activa_red.webp" alt="Activa" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Activa</h3>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons for the bike slider -->
+                <button onclick="scrollSlider('bike-slider', -1)" class="scroll-button absolute left-0 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-gray-700 shadow-lg focus:outline-none">
+                    <i class="fas fa-chevron-left text-white"></i>
+                </button>
+                <button onclick="scrollSlider('bike-slider', 1)" class="scroll-button absolute right-0 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-gray-700 shadow-lg focus:outline-none">
+                    <i class="fas fa-chevron-right text-white"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cars Section -->
+        <div id="cars" class="bg-card shadow-lg p-4 mb-8">
+            <h2 id="cars-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Cars for Group Travel</h2>
+            <p id="cars-subtitle" class="text-center text-card-dark mb-8">Travel with comfort and style with our range of cars.</p>
+
+            <div class="relative">
+                <div id="car-slider" class="flex overflow-x-hidden space-x-4 pb-4 card-slider-container">
+                    <!-- Car Cards -->
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/car_maruti_swift.png" alt="Maruti Swift" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Maruti Swift</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/car_tata_nexon.avif" alt="Tata Nexon" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Tata Nexon</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/car_hyundai_120.avif" alt="Hyundai i20" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Hyundai i20</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images\car_thar.avif" alt="Mahindra Thar" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Mahindra Thar</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
+                        <img src="images/car_creta.avif" alt="creta_car" class="w-full h-40 object-cover mb-4">
+                        <h3 class="font-bold text-lg text-card-dark">Creta</h3>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons for the car slider -->
+                <button onclick="scrollSlider('car-slider', -1)" class="scroll-button absolute left-0 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-gray-700 shadow-lg focus:outline-none">
+                    <i class="fas fa-chevron-left text-white"></i>
+                </button>
+                <button onclick="scrollSlider('car-slider', 1)" class="scroll-button absolute right-0 top-1/2 transform -translate-y-1/2 p-3 rounded-full bg-gray-700 shadow-lg focus:outline-none">
+                    <i class="fas fa-chevron-right text-white"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Why Choose Us Section -->
+        <div id="why-choose-us" class="bg-card shadow-lg p-6 mb-8">
+            <h2 id="why-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Why Choose Us?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-4 rounded-xl">
+                    <i class="fas fa-shield-alt text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-xl text-card-dark mb-2">Safe & Reliable</h3>
+                    <p class="text-card-dark">All our vehicles are regularly serviced and well-maintained for your safety.</p>
+                </div>
+                <div class="p-4 rounded-xl">
+                    <i class="fas fa-headset text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-xl text-card-dark mb-2">24/7 Support</h3>
+                    <p class="text-card-dark">Our customer support team is available around the clock to assist you.</p>
+                </div>
+                <div class="p-4 rounded-xl">
+                    <i class="fas fa-motorcycle text-5xl text-blue-500 mb-4"></i>
+                    <h3 class="font-bold text-xl text-card-dark mb-2">Easy & Fast Booking</h3>
+                    <p class="text-card-dark">Book your ride in just a few clicks with our simple and intuitive process.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Testimonials Section -->
+        <div id="testimonials" class="bg-card shadow-lg p-6 mb-8">
+            <h2 id="testimonials-title" class="text-3xl font-bold mb-6 text-center text-card-dark">What Our Customers Say</h2>
+            <div class="testimonial-slider-container">
+                <div id="testimonial-slides" class="testimonial-slides">
+                    <!-- Slide 1: Testimonial 1 & 2 -->
+                    <div class="testimonial-slide">
+                        <div class="flex-1 p-6 bg-card rounded-2xl shadow-md">
+                            <p class="italic text-card-dark mb-4">"The best rental service in Goa! The scooter was in excellent condition and the booking process was super smooth."</p>
+                            <div class="font-bold text-card-dark">Ankita S.</div>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-6 bg-card rounded-2xl shadow-md">
+                            <p class="italic text-card-dark mb-4">"We rented a car for our family trip. It was a great experience, and the car was very clean and well-maintained."</p>
+                            <div class="font-bold text-card-dark">Rahul K.</div>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Testimonial 3 & 4 -->
+                    <div class="testimonial-slide">
+                        <div class="flex-1 p-6 bg-card rounded-2xl shadow-md">
+                            <p class="italic text-card-dark mb-4">"Absolutely fantastic service! The team was so helpful and the prices are very reasonable. Highly recommend."</p>
+                            <div class="font-bold text-card-dark">Priya M.</div>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="flex-1 p-6 bg-card rounded-2xl shadow-md">
+                            <p class="italic text-card-dark mb-4">"Renting a scooter was so easy! The vehicle was perfect for exploring the small coastal roads of Goa."</p>
+                            <div class="font-bold text-card-dark">Sanjay G.</div>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="faq" class="bg-card shadow-lg p-6 mb-8">
+            <h2 id="faq-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <details class="p-4 rounded-xl bg-card shadow-sm">
+                    <summary class="font-bold text-lg text-card-dark cursor-pointer">
+                        How can I book a scooter or car?
+                    </summary>
+                    <p class="pt-4 text-card-dark">You can book a vehicle by contacting us directly through the phone number or WhatsApp button on the website. We'll assist you with the booking process.</p>
+                </details>
+                <details class="p-4 rounded-xl bg-card shadow-sm">
+                    <summary class="font-bold text-lg text-card-dark cursor-pointer">
+                        What documents are required for rental?
+                    </summary>
+                    <p class="pt-4 text-card-dark">You will need to provide a valid driving license and a form of government-issued ID (like a Passport or Aadhar card) for verification.</p>
+                </details>
+                <details class="p-4 rounded-xl bg-card shadow-sm">
+                    <summary class="font-bold text-lg text-card-dark cursor-pointer">
+                        Do you offer delivery services?
+                    </summary>
+                    <p class="pt-4 text-card-dark">Yes, we offer vehicle delivery and pickup at select locations for your convenience. Please contact us for more details.</p>
+                </details>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="bg-card shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Map Section -->
+            <div class="overflow-hidden shadow-md">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15386.439818811438!2d73.81831805!3d15.42995955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb33d0144f83b%3A0x6b6d511394c5025a!2sPanaji%2C%20Goa!5e0!3m2!1sen!2sin!4v1628163013915!5m2!1sen!2sin"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Contact Details Section -->
+            <div class="flex flex-col justify-center p-4">
+                <h2 id="contact-title" class="text-3xl font-bold mb-4 text-card-dark">Contact Us</h2>
+                <p id="contact-subtitle" class="text-card-dark mb-4">Feel free to get in touch with us for bookings or any queries.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-map-marker-alt text-xl text-blue-500"></i>
+                        <span class="text-card-dark">123, Calangute-Baga Road, Panaji, Goa - 403001</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-phone-alt text-xl text-blue-500"></i>
+                        <span class="text-card-dark">+91 99999 99999</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-xl text-blue-500"></i>
+                        <span class="text-card-dark">info@gurudasrentals.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for the sliders -->
+    <script>
+        // Banner Slider
+        const bannerImages = document.querySelectorAll('.slider-image');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            bannerImages[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
+            bannerImages[currentImageIndex].classList.add('active');
+        }
+
+        // Automatically change the banner image every 5 seconds
+        setInterval(showNextImage, 5000);
+
+        // Vehicle Card Sliders
+        function scrollSlider(sliderId, direction) {
+            const slider = document.getElementById(sliderId);
+            const scrollAmount = direction * (slider.offsetWidth / 2); // Scroll by half the slider's width
+            slider.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+
+        // Testimonial Slider
+        const testimonialSlides = document.getElementById('testimonial-slides');
+        let currentTestimonialIndex = 0;
+
+        function showNextTestimonial() {
+            const testimonialCount = testimonialSlides.children.length;
+            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialCount;
+            const translateValue = -currentTestimonialIndex * 100;
+            testimonialSlides.style.transform = `translateX(${translateValue}%)`;
+        }
+        
+        // Automatically change the testimonial every 7 seconds
+        setInterval(showNextTestimonial, 7000);
+
+        // Theme Switcher Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeHandle = document.getElementById('theme-handle');
+            const body = document.getElementById('page-body');
+
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                    themeToggle.classList.remove('bg-gray-300');
+                    themeToggle.classList.add('bg-gray-600');
+                    themeHandle.style.transform = 'translateX(0)';
+                } else {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                    themeToggle.classList.remove('bg-gray-600');
+                    themeToggle.classList.add('bg-gray-300');
+                    themeHandle.style.transform = 'translateX(100%)';
+                }
+            }
+
+            // Check for saved theme preference or default to dark mode
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            applyTheme(savedTheme);
+
+            themeToggle.addEventListener('click', () => {
+                const newTheme = body.classList.contains('light-mode') ? 'dark' : 'light';
+                localStorage.setItem('theme', newTheme);
+                applyTheme(newTheme);
+            });
+        });
+    </script>
+</body>
+</html>
