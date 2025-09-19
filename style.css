@@ -1,53 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@400;500;600;700&display=swap');
 
 body {
-    /* font-family: 'Inter', sans-serif; */
-   font-family: 'Great Vibes ', sans-serif;
-
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-#banner-title {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;  /* Bold style if applicable */
-  font-size: 3rem;   /* Large size for banner */
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-#banner-subtitle {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;  /* Regular style */
-  font-size: 1.5rem; /* Medium size for subtitle */
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-}
-/* Base dark mode styles */
-body.dark-mode {
-    background-color: #1A1A1A;
-    color: #E5E7EB;
-}
-.bg-card.dark-mode {
-    background-color: #1F2937;
-}
-.text-card-dark.dark-mode {
-    color: #E5E7EB;
-}
-.bg-main.dark-mode {
-    background-color: #1A1A1A;
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fafc;
+    color: #1a202c;
 }
 
-/* Light mode styles */
-body.light-mode {
-    background-color: #F9FAFB;
-    color: #333;
+.logo-font {
+    font-family: 'Dancing Script', cursive;
 }
-.bg-card.light-mode {
-    background-color: #FFFFFF;
+
+.bg-card {
+    background-color: #ffffff;
 }
-.text-card-dark.light-mode {
-    color: #333;
-}
-.bg-main.light-mode {
-    background-color: #F9FAFB;
+
+.text-card-dark {
+    color: #1a202c;
 }
 
 /* Custom styles for the slider */
@@ -61,6 +29,7 @@ body.light-mode {
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 .slider-image.active {
     opacity: 1;
 }
@@ -70,27 +39,25 @@ body.light-mode {
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
+
 .card-slider-container::-webkit-scrollbar {
     height: 8px;
 }
+
 .card-slider-container::-webkit-scrollbar-thumb {
-    background-color: #4B5563;
+    background-color: #9CA3AF;
     border-radius: 10px;
 }
+
 .card-slider-container::-webkit-scrollbar-track {
-    background: #374151;
-    border-radius: 10px;
-}
-.light-mode .card-slider-container::-webkit-scrollbar-thumb {
-    background-color: #D1D5DB;
-}
-.light-mode .card-slider-container::-webkit-scrollbar-track {
     background: #F3F4F6;
+    border-radius: 10px;
 }
 
 .scroll-button {
     transition: background-color 0.3s ease;
 }
+
 .scroll-button:hover {
     background-color: #374151;
 }
@@ -101,15 +68,26 @@ body.light-mode {
     -webkit-backdrop-filter: blur(10px);
 }
 
+/* FAQ toggle styles */
+.faq-toggle-btn {
+    background-color: #f3f4f6;
+}
+
+.faq-toggle-btn:hover {
+    background-color: #e5e7eb;
+}
+
 /* Testimonial slider styles */
 .testimonial-slider-container {
     position: relative;
     overflow: hidden;
 }
+
 .testimonial-slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .testimonial-slide {
     flex: 0 0 100%;
     display: flex;
@@ -117,9 +95,23 @@ body.light-mode {
     gap: 1rem;
     padding: 1rem;
 }
+
 @media (min-width: 768px) {
     .testimonial-slide {
         flex-direction: row;
         gap: 2rem;
     }
+}
+
+/* Banner button icon styling */
+.banner-button-icon {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.banner-button-icon:hover {
+    background-color: transparent;
 }

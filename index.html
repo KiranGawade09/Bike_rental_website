@@ -7,11 +7,12 @@
     <!-- Use Tailwind CSS for a clean and responsive design -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
 </head>
-<body id="page-body" class="antialiased bg-main dark-mode">
+<body id="page-body" class="antialiased">
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/919999999999" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition-transform transform hover:scale-110">
@@ -19,108 +20,118 @@
     </a>
 
     <!-- Navigation Bar -->
-    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 navbar-backdrop bg-gray-900 bg-opacity-80 shadow-md">
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 navbar-backdrop bg-white bg-opacity-80 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo/Brand Name -->
             <a href="#" class="flex items-center space-x-2">
-              
-                <span id="logo-text" class="text-xl font-bold text-white">Gurudas Rentals Goa</span>
+                <span id="logo-text" class="text-3xl logo-font font-bold text-orange-500">Gurudas Rentals Goa</span>
             </a>
             
             <!-- Navigation Links -->
             <div class="hidden md:flex space-x-6 lg:space-x-8">
-                <a href="#bikes" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Bikes</a>
-                <a href="#cars" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Cars</a>
-                <a href="#why-choose-us" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Why Us</a>
-                <a href="#testimonials" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Testimonials</a>
-                <a href="#faq" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">FAQ</a>
-                <a href="#contact" class="nav-link text-gray-300 hover:text-green-500 transition-colors duration-300 font-medium">Contact</a>
+                <a href="#bikes" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">Bikes</a>
+                <a href="#cars" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">Cars</a>
+                <a href="#why-choose-us" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">Why Us</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-orange-500 transition-colors duration-300 font-medium">Contact</a>
             </div>
 
-            <!-- Mobile Menu and Theme Switch -->
-            <div class="flex items-center space-x-4">
-                <div id="theme-toggle" class="w-16 h-8 flex items-center bg-gray-600 rounded-full p-1 cursor-pointer transition-colors duration-300">
-                    <div id="theme-handle" class="w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300"></div>
-                </div>
-                <button class="md:hidden text-gray-300 text-2xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            <!-- Mobile Menu -->
+            <button class="md:hidden text-gray-700 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="max-w-7xl mx-auto px-4 py-4 pt-20" aria-label="Breadcrumb">
+        <ol class="flex flex-wrap items-center text-sm sm:text-base text-gray-500 space-x-2">
+            <li><a href="#" class="hover:text-orange-500 transition-colors duration-300">Home</a></li>
+            <li><span class="text-gray-400">/</span></li>
+            <li><a href="#bikes" class="hover:text-orange-500 transition-colors duration-300">Bikes</a></li>
+            <li><span class="text-gray-400">/</span></li>
+            <li class="font-semibold text-gray-700">All Vehicles</li>
+        </ol>
     </nav>
     
     <!-- Main Content Wrapper -->
-    <div class="pt-16 py-8 px-4 bg-main">
-<!-- Header/Banner Section -->
-<div class="relative w-full overflow-hidden shadow-lg mb-8" style="padding-top: 56.25%;">
-    <!-- Slider Images (all in one container) -->
-    <img src="images/Banner_Img_1.jpeg" class="slider-image active" alt="Goa beach road">
-    <img src="images/Banner_img_2.jpg" class="slider-image" alt="Goa scooter rental">
-    <img src="images/banner_img_9.jpg" class="slider-image" alt="Goa scenic drive">
-    <img src="images/banner_img_4.jpg" class="slider-image" alt="Goa beach road">
-    <img src="images/banner_img_5.jpg" class="slider-image" alt="Goa scooter rental">
-    <img src="images/banner_img_6.jpg" class="slider-image" alt="Goa scenic drive">
-    <img src="images/banner_img_14.jpg" class="slider-image" alt="Goa beach road">
-    <img src="images/banner_img_1.jpg" class="slider-image" alt="Goa scooter rental">
-    <img src="images/banner_img_9.jpg" class="slider-image" alt="Goa scenic drive">
-    <img src="images/banner_Img_10.jpeg" class="slider-image" alt="Goa beach road">
-    <img src="images/banner_img_11.jpg" class="slider-image" alt="Goa scooter rental">
-    <img src="images/banner_img_12.jpg" class="slider-image" alt="Goa scenic drive">
-    <img src="images/banner_Img_13.jpeg" class="slider-image" alt="Goa beach road">
-    <img src="images/banner_img_14.jpg" class="slider-image" alt="Goa scooter rental">
-    <img src="images/banner_img_5.jpg" class="slider-image" alt="Goa scenic drive">
+    <div class="py-4 px-4 bg-f7fafc">
+        <!-- Header/Banner Section -->
+        <div class="relative w-full overflow-hidden shadow-lg mb-8 rounded-lg" style="padding-top: 56.25%;">
+            <!-- Slider Images (all in one container) -->
+            <img src="images/banner_img_14.jpg" class="slider-image active" alt="Goa beach road">
+            <img src="images/Banner_img_2.jpg" class="slider-image" alt="Goa scooter rental">
+            <img src="images/banner_img_11.jpg" class="slider-image" alt="Goa scenic drive">
 
-    <!-- Dark Overlay -->
-    <div class="absolute inset-0 bg-black opacity-40"></div>
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black opacity-40 rounded-lg"></div>
 
-    <!-- Text Overlay -->
-    <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
-        <h1 id="banner-title" class="text-4xl md:text-6xl text-center text-white font-bold leading-tight drop-shadow-lg mb-2">
-            Welcome to Gurudas Rental Service Goa
-        </h1>
-        <h2 id="banner-subtitle" class="text-lg md:text-xl text-center text-white font-medium drop-shadow-lg mb-6">
-            Your Trusted Partner for rental services in Goa
-        </h2>
-        <a href="#bikes" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300">
-            Explore
-        </a>
-    </div>
-</div>
-        <!-- Bikes Section -->
-        <div id="bikes" class="bg-card shadow-lg p-4 mb-8">
+            <!-- Text Overlay -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center p-4">
+                <h1 id="banner-title" class="text-4xl md:text-6xl text-center text-white font-bold leading-tight drop-shadow-lg mb-2">
+                    Welcome to Gurudas Rental Service Goa
+                </h1>
+                <h2 id="banner-subtitle" class="text-lg md:text-xl text-center text-white font-medium drop-shadow-lg mb-6">
+                    Your Trusted Partner for rental services in Goa
+                </h2>
+                <a href="#bikes" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-orange-600 transition duration-300">
+                    Explore
+                </a>
+            </div>
+            <button id="change-banner" class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 text-white text-2xl font-bold banner-button-icon focus:outline-none focus:ring-2 focus:ring-white">
+                >
+            </button>
+        </div>
+        
+        <!-- Bikes Section - Now with a top border and added padding -->
+        <div id="bikes" class="bg-card shadow-lg p-6 mb-8 mt-8 rounded-xl">
             <h2 id="bikes-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Bikes for Every Adventure</h2>
             <p id="bikes-subtitle" class="text-center text-card-dark mb-8">We have a wide variety of scooters to get you exploring Goa effortlessly.</p>
 
             <div class="relative">
                 <div id="bike-slider" class="flex overflow-x-hidden space-x-4 pb-4 card-slider-container">
-                    <!-- Bike Cards -->
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/activa_blue.webp" alt="Honda Activa" class="w-full h-40 object-cover mb-4">
+                    <!-- Bike Cards (Main Set) -->
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/activa_blue.webp" alt="Honda Activa" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Honda Activa</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/suzuki_access.avif" alt="Suzuki Access" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/suzuki_access.avif" alt="Suzuki Access" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Suzuki Access 125</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/White_vespa.webp" alt="Honda Dio" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/Vespa_Yellow.jpg" alt="Vespa" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Vespa</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/facino_blue_side.webp" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/facino_blue_side.webp" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Yamaha Fascino</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/aviotor_white_side.webp" alt="Aviotor" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/aviotor_white_side.webp" alt="Aviotor" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Aviotor</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/facino_black_front.png" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/facino_metalic_blue.webp" alt="Yamaha Fascino" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Yamaha Fascino</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/activa_red.webp" alt="Activa" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/activa_red.webp" alt="Activa" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Activa</h3>
+                    </div>
+                    <!-- Bike Cards (Duplicated for circular loop) -->
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/activa_white.webp" alt="Honda Activa" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Honda Activa</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/suzuki_access.avif" alt="Suzuki Access" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Suzuki Access 125</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/Vespa_Yellow.jpg" alt="Vespa" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Vespa</h3>
                     </div>
                 </div>
 
@@ -134,33 +145,50 @@
             </div>
         </div>
 
-        <!-- Cars Section -->
-        <div id="cars" class="bg-card shadow-lg p-4 mb-8">
+        <!-- Cars Section - Now with a top border and added padding -->
+        <div id="cars" class="bg-card shadow-lg p-6 mb-8 mt-8 rounded-xl">
             <h2 id="cars-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Cars for Group Travel</h2>
             <p id="cars-subtitle" class="text-center text-card-dark mb-8">Travel with comfort and style with our range of cars.</p>
 
             <div class="relative">
                 <div id="car-slider" class="flex overflow-x-hidden space-x-4 pb-4 card-slider-container">
-                    <!-- Car Cards -->
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/car_maruti_swift.png" alt="Maruti Swift" class="w-full h-40 object-cover mb-4">
+                    <!-- Car Cards (Main Set) -->
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_maruti_swift.png" alt="Maruti Swift" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Maruti Swift</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/car_tata_nexon.avif" alt="Tata Nexon" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_tata_nexon.avif" alt="Tata Nexon" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Tata Nexon</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/car_hyundai_120.avif" alt="Hyundai i20" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_hyundai_120.avif" alt="Hyundai i20" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Hyundai i20</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images\car_thar.avif" alt="Mahindra Thar" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_thar.avif" alt="Mahindra Thar" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Mahindra Thar</h3>
                     </div>
-                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center">
-                        <img src="images/car_creta.avif" alt="creta_car" class="w-full h-40 object-cover mb-4">
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_creta.avif" alt="creta_car" class="w-full h-40 object-cover mb-4 rounded-lg">
                         <h3 class="font-bold text-lg text-card-dark">Creta</h3>
+                    </div>
+                    <!-- Car Cards (Duplicated for circular loop) -->
+                     <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_maruti_swift.png" alt="Maruti Swift" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Maruti Swift</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_tata_nexon.avif" alt="Tata Nexon" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Tata Nexon</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_hyundai_120.avif" alt="Hyundai i20" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Hyundai i20</h3>
+                    </div>
+                    <div class="flex-none w-64 md:w-80 p-3 bg-card shadow-md text-center rounded-lg">
+                        <img src="images/car_thar.avif" alt="Mahindra Thar" class="w-full h-40 object-cover mb-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-card-dark">Mahindra Thar</h3>
                     </div>
                 </div>
 
@@ -175,7 +203,7 @@
         </div>
 
         <!-- Why Choose Us Section -->
-        <div id="why-choose-us" class="bg-card shadow-lg p-6 mb-8">
+        <div id="why-choose-us" class="bg-card shadow-lg p-6 mb-8 mt-8 rounded-xl">
             <h2 id="why-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Why Choose Us?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="p-4 rounded-xl">
@@ -197,7 +225,7 @@
         </div>
 
         <!-- Customer Testimonials Section -->
-        <div id="testimonials" class="bg-card shadow-lg p-6 mb-8">
+        <div id="testimonials" class="bg-card shadow-lg p-6 mb-8 mt-8 rounded-xl">
             <h2 id="testimonials-title" class="text-3xl font-bold mb-6 text-center text-card-dark">What Our Customers Say</h2>
             <div class="testimonial-slider-container">
                 <div id="testimonial-slides" class="testimonial-slides">
@@ -240,22 +268,22 @@
         </div>
 
         <!-- FAQ Section -->
-        <div id="faq" class="bg-card shadow-lg p-6 mb-8">
+        <div id="faq" class="bg-card shadow-lg p-6 mb-8 mt-8 rounded-xl">
             <h2 id="faq-title" class="text-3xl font-bold mb-6 text-center text-card-dark">Frequently Asked Questions</h2>
             <div class="space-y-4">
-                <details class="p-4 rounded-xl bg-card shadow-sm">
+                <details class="p-4 rounded-xl bg-card shadow-sm faq-toggle-btn">
                     <summary class="font-bold text-lg text-card-dark cursor-pointer">
                         How can I book a scooter or car?
                     </summary>
                     <p class="pt-4 text-card-dark">You can book a vehicle by contacting us directly through the phone number or WhatsApp button on the website. We'll assist you with the booking process.</p>
                 </details>
-                <details class="p-4 rounded-xl bg-card shadow-sm">
+                <details class="p-4 rounded-xl bg-card shadow-sm faq-toggle-btn">
                     <summary class="font-bold text-lg text-card-dark cursor-pointer">
                         What documents are required for rental?
                     </summary>
                     <p class="pt-4 text-card-dark">You will need to provide a valid driving license and a form of government-issued ID (like a Passport or Aadhar card) for verification.</p>
                 </details>
-                <details class="p-4 rounded-xl bg-card shadow-sm">
+                <details class="p-4 rounded-xl bg-card shadow-sm faq-toggle-btn">
                     <summary class="font-bold text-lg text-card-dark cursor-pointer">
                         Do you offer delivery services?
                     </summary>
@@ -265,7 +293,7 @@
         </div>
 
         <!-- Contact Section -->
-        <div id="contact" class="bg-card shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div id="contact" class="bg-card shadow-lg p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 mt-8 rounded-xl">
             <!-- Map Section -->
             <div class="overflow-hidden shadow-md">
                 <iframe
@@ -308,13 +336,13 @@
         let currentImageIndex = 0;
 
         function showNextImage() {
-            bannerImages[currentImageIndex].classList.remove('active');
+            bannerImages.forEach(img => img.classList.remove('active'));
             currentImageIndex = (currentImageIndex + 1) % bannerImages.length;
             bannerImages[currentImageIndex].classList.add('active');
         }
 
-        // Automatically change the banner image every 5 seconds
-        setInterval(showNextImage, 5000);
+        // Add click event listener to the next button
+        document.getElementById('change-banner').addEventListener('click', showNextImage);
 
         // Vehicle Card Sliders
         function scrollSlider(sliderId, direction) {
@@ -324,6 +352,20 @@
                 left: scrollAmount,
                 behavior: 'smooth'
             });
+
+            // Handle circular loop
+            const totalWidth = slider.scrollWidth - slider.clientWidth;
+            if (direction > 0 && slider.scrollLeft + slider.clientWidth >= totalWidth) {
+                // If scrolling right and at the end, jump back to the beginning after a short delay
+                setTimeout(() => {
+                    slider.scrollLeft = 0;
+                }, 500);
+            } else if (direction < 0 && slider.scrollLeft === 0) {
+                // If scrolling left and at the beginning, jump to the end
+                setTimeout(() => {
+                    slider.scrollLeft = totalWidth - 10; // -10 to prevent an infinite loop glitch
+                }, 500);
+            }
         }
 
         // Testimonial Slider
@@ -339,39 +381,6 @@
         
         // Automatically change the testimonial every 7 seconds
         setInterval(showNextTestimonial, 7000);
-
-        // Theme Switcher Logic
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.getElementById('theme-toggle');
-            const themeHandle = document.getElementById('theme-handle');
-            const body = document.getElementById('page-body');
-
-            function applyTheme(theme) {
-                if (theme === 'dark') {
-                    body.classList.remove('light-mode');
-                    body.classList.add('dark-mode');
-                    themeToggle.classList.remove('bg-gray-300');
-                    themeToggle.classList.add('bg-gray-600');
-                    themeHandle.style.transform = 'translateX(0)';
-                } else {
-                    body.classList.remove('dark-mode');
-                    body.classList.add('light-mode');
-                    themeToggle.classList.remove('bg-gray-600');
-                    themeToggle.classList.add('bg-gray-300');
-                    themeHandle.style.transform = 'translateX(100%)';
-                }
-            }
-
-            // Check for saved theme preference or default to dark mode
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            applyTheme(savedTheme);
-
-            themeToggle.addEventListener('click', () => {
-                const newTheme = body.classList.contains('light-mode') ? 'dark' : 'light';
-                localStorage.setItem('theme', newTheme);
-                applyTheme(newTheme);
-            });
-        });
     </script>
 </body>
 </html>
